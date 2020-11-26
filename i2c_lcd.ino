@@ -7,8 +7,6 @@
 #define Type DHT11
 int sensePin = 6;
 
-//int powerPin = 7;
-//int gndPin = 4;
 
 DHT obj(sensePin, Type);
 float temp;
@@ -24,10 +22,6 @@ void setup() {
   obj.begin();
   delay(setupTime);
   Serial.begin(115200);
-  //pinMode(powerPin, OUTPUT);
-  //pinMode(gndPin, OUTPUT);
-  //digitalWrite(powerPin, HIGH);
-  //digitalWrite(gndPin, LOW);
 }
 
 void loop() {
